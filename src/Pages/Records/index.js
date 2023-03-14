@@ -23,7 +23,7 @@ function Records() {
     <MainLayout>
       <div className="w-full">
         <div className="container mx-auto">
-          <div className="mt-14 flex justify-around gap-12">
+          <div className="pt-14 flex justify-around gap-12">
             <button className="bg-yellow p-6 w-72 h-72" onClick={scrollToBody}>
               <div
                 className="w-full h-full bg-blend-luminosity"
@@ -76,7 +76,7 @@ function Records() {
               </div>
             </button>
           </div>
-          <div className="pt-14 pb-7" ref={bodyRef}>
+          <div className="pt-14" ref={bodyRef}>
             <div className="w-full px-6 py-4 bg-gray-dark">
               <div className="flex items-center">
                 <p className="text-light w-24 text-base font-inter">
@@ -101,7 +101,7 @@ function Records() {
               </div>
             </div>
           </div>
-          <div className="py-7" ref={exerciseRef}>
+          <div className="pt-14" ref={exerciseRef}>
             <div className="w-full px-6 py-4 bg-gray-dark">
               <div className="flex items-center">
                 <p className="text-light w-24 text-base">
@@ -134,7 +134,7 @@ function Records() {
               </div>
             </div>
           </div>
-          <div className="py-7" ref={diaryRef}>
+          <div className="pt-14" ref={diaryRef}>
             <div className="w-full">
               <p className="text-gray text-xl font-inter">MY DIARY</p>
               <div className="w-full grid grid-cols-4 gap-2">

@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "NotoSansJP";
+  src: local("NotoSansJP"),
+    url("@/assets/fonts/NotoSansJP/NotoSansJP-Light.otf") format("opentype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "NotoSansJP";
+  src: local("NotoSansJP"),
+    url("@/assets/fonts/NotoSansJP/NotoSansJP-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+    url("@/assets/fonts/Inter/Inter-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+    url("@/assets/fonts/Inter/Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "NotoSansJP", "Inter", serif;
+  font-size: 1rem;
+}
+
+.bg-orange-gradient {
+  background: linear-gradient(32.95deg, #ffcc21 8.75%, #ff963c 86.64%);
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #777777;
+  border-radius: 20px;
+  background-color: #777777;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 6px;
+  background-color: #777777;
+  border-radius: 20px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ffcc21;
+}
+
+.border-24 {
+  border-width: 24px;
 }
